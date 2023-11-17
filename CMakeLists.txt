@@ -8,3 +8,8 @@ add_executable(MusiCV main.cpp)
 
 # Add dependencies
 include(cmake/CPM.cmake)
+
+CPMAddPackage("gh:opencv/opencv#4.8.1")
+
+# link dependencies
+target_link_libraries(MusiCV opencv)
